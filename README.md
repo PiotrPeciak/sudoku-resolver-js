@@ -1,33 +1,20 @@
-# My first Cordova app #
+# sudoku-resolver-js #
 
-My first test cordova application.
+My first test repository on github. This is a simple JS app to resolve sudoku game.
 
 ### How to Use? ###
 
-To see details about requirements see `config.xml` file
-```xml
-<engine name="android" spec="5.1.1" />
+Put folder with application to your public_html directory of WAMP/XAMP and thats all.
+
+To start use `createGame()` method
+
+From JS console you can use:
+```JavaScript
+tryFill();
 ```
+to trying fill sudoku
 
-Before first running application, you need to download platform and plugins
-
-```bash
-cordova prepare
-```
-
-To run application, you need to set Android SDK
-
-```bash
-cordova run
-```
-
-### Used technology ###
-
-On this simple project, I used following technologies:
-
-* Cordova
-* Polymer
 
 ### About me ###
 
-More of my example apps you can find on [my github](https://github.com/PiotrPeciak) profile"#sudoku-resolver-js" 
+More of my example apps you can find on [my github](https://github.com/PiotrPeciak) profile
