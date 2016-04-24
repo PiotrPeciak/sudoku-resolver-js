@@ -1,0 +1,152 @@
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ppe">
+    <title> - Sudoku Resolver - </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+    .komorka {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      vertical-align: center;
+      line-height: 30px;
+      background: #fff;
+      float: left;
+      border: 1px dotted #333;
+    }
+    .inserted {
+      color: #00f;
+    }
+
+    .kwadracik {
+      float: left;
+      border: 1px solid #111;
+    }
+
+    .wiersz {
+      clear: both;
+    } 
+    .wierszD {
+      clear: both;
+    } 
+    </style>
+  </head>
+
+    <body>
+        <div>
+            <p>Sudoku resolver</p>
+        </div>
+        <br>
+        <!--
+        <div>
+            <div class="wiersz">
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka"></div>
+                <div class="komorka"></div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka"></div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+                <div class="komorka">1</div>
+                <div class="komorka">2</div>
+                <div class="komorka">3</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+                <div class="komorka">4</div>
+                <div class="komorka">5</div>
+                <div class="komorka">6</div>
+            </div>
+            <div class="wiersz">
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+                <div class="komorka">7</div>
+                <div class="komorka">8</div>
+                <div class="komorka">9</div>
+            </div>
+        </div>
+        -->
+    </body>
+
+  <script src="cell.js"></script>
+  <script src="rect.js"></script>
+  <script src="sudoku.js"></script>
+</html>
